@@ -114,6 +114,35 @@ body {
     padding: 16px 32px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.icon-list {
+    display: none;
+}
+.strategy-section {
+    padding: 96px 0;
+    margin: 0 auto;
+}
+.name-strategy {
+    margin-bottom: 8px;
+
+}
+.name-strategy {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--NAVY-BLUE, #2E2F42);
+
+}
+.description-strategy {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    align-self: stretch;
+    color: var(--SLATE, #434455);
+}
 
 @media screen and (min-width: 320px) {
 .container {
@@ -224,6 +253,23 @@ body {
         color: var(--WHITE, #FFF);       
 }
  /* ============/HERO SECTION MOBILE================= */
+ /* ================STRATEGY SECTION MOBILE========================================= */
+
+ .strategy-section {
+    width: 320px;
+}
+
+.strategy-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+
+  /* ================/STRATEGY SECTION MOBILE========================================= */
+
+
+
 }
 
 /* =========/MOBILE SETTINGS=================================================== */
@@ -301,9 +347,7 @@ body {
             letter-spacing: 0.02em;
             color: var(--SLATE, #434455);
      }
-         /* .address-list {
-        padding-top: 16px;
-         } */
+     
     
          .nav:hover {
              color: #404bbf;
@@ -377,6 +421,48 @@ body {
 }
 
 /* ===========/HERO SECTION TABLET===================================== */
+/* ============STRATEGY SECTION TABLET============================================== */
+.strategy-section {
+    
+    width: 768px;
+}
+.strategy-section-container {
+    display: flex;
+
+
+}
+
+.strategy-list {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+row-gap: 72px;
+gap: 24px;
+
+}
+
+.strategy-list-item {
+
+    width: calc((100% - 72px) / 2);}
+
+.name-strategy {
+        text-align: start ;
+    }
+
+
+
+}
+
+
+
+/* ============STRATEGY SECTION TABLET============================================== */
+
+
+
+
+
+
+
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -422,9 +508,46 @@ only screen and (min-width: 768px) and (min-resolution: 192dpi) {
     max-width: 1440px;
     height: 600px;
 }
+.button:hover {
+    background-color: #404BBF;
+}
+
+.button:focus {
+    background-color: #404BBF;
+}
 
 /* ============/HERO SECTION DESKTOP===================================================== */
-   }
+
+/* ==============STRATEGY SECTION DESKTOP============== */
+.strategy-section {
+    padding: 120px 0;
+    width: 1440px;
+}
+
+
+.icon-list {
+    display: flex;
+}
+
+
+.strategy-section-container {
+    display: flex;
+
+}
+
+.strategy-list {
+    display: flex;
+    gap: 24px;
+
+}
+
+.strategy-list-item {
+    width: calc((100% - 72px) / 4);
+}
+
+       
+
+}
 @media only screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
     .hero-section{
