@@ -173,8 +173,68 @@ body {
         }
     
         /* =======  /HEADER MOBILE STYLESS ======= */
+        /* ============HERO SECTION================= */
+ 
+    .hero-section {
+                    margin: 0 auto;
+                    padding-top: 72px;
+                    padding-bottom: 72px;
+
+                   
+     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-mob.jpg);
+        background-color: #2e2f42;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: padding-box;
+        max-width: 320px;
+        height: 432px;
+        background-size: cover;
+                    } 
+
+     .main-title {
+    max-width: 220px;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--WHITE, #FFF);
+
+        
 }
 
+.button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--IRIS, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: #4D5AE5;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+ /* ============/HERO SECTION================= */
+}
+/* =========/MOBILE SETTINGS========= */
+
+/* ============TABLET SETTINGS============ */
 @media screen and (min-width: 768px) {
     .container {
         width: 736px;
@@ -316,9 +376,11 @@ body {
             padding-top: 0;
           
         }
-    /* .address-menu-item  {
-        display: flex;
-       
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                        } */
-}
+    }
+        /* @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+            .element {
+                background-image: url('mobile-background@2x.jpg');
+               
+            }
+        } */
