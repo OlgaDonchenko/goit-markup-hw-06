@@ -328,14 +328,23 @@
 
       <!-- =======PORTFOLIO SECTION Секція 4============= -->
 
-      <!-- <section class="portfolio-section">
+      <section class="portfolio-section">
         <div class="potrfolio-container container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-title-list">
             <li class="portfolio-title-list-item">
               <div class="overlay-cards">
                 <img
-                  src="./images/photo-banking-app.jpg"
+                  srcset="
+                    ./images/photo-banking-app-mob.jpg    288w,
+                    ./images/photo-banking-app-tablet.jpg 356w,
+                    ./images/photo-banking-app.jpg        360w
+                    ./images/photo-banking-app-mob@2x.jpg    576w,
+                    ./images/photo-banking-app-tablet@2x.jpg 712w,
+                    ./images/photo-banking-app@2x.jpg        720w
+                  "
+                  sizes="(max-width: 768px) 288px, (min-width: 768px) 356px, (min-width: 1158px) 360px"
+                  src="./images/photo-banking-app-mob.jpg"
                   alt="photo banking app"
                   width="360"
                   height="300"
@@ -448,7 +457,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- ======FOOTER SECTION ============ -->
     <!-- <footer class="footer-section">
