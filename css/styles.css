@@ -67,19 +67,19 @@ body {
 .container {
     padding-left: 16px;
     padding-right: 16px;
-    margin: 0 auto;
-    max-width: 1158px;
+
+
 }
 
 /* ============== /COMMON STYLES ============== */
-/* @media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
 .container {
-        width: 318px;
+        width: 320px;
         margin-left: auto;
         margin-right: auto;
 
     }
-} */
+}
 
 
 .hero-section {
@@ -328,7 +328,7 @@ background-color: #FFFFFF;
         }
            
         .container-flex {
-            width: 320px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -540,8 +540,7 @@ only screen and (max-width: 767px) and (min-resolution: 192dpi) {
     padding-top: 112px;
     padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-tablet.jpg);
-    max-width: 768px;
-    height: 436px;
+
 
 }
 .main-title {
