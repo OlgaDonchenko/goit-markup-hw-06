@@ -249,17 +249,19 @@ background-color: #FFFFFF;
     fill: #f4f4fd;
 }
 
-@media screen and (min-width: 320px) {
+/* @media screen and (min-width: 320px) {
 .container {
         width: 318px;
+        margin-left: auto;
+        margin-right: auto;
 
     }
-}
+} */
 
 @media screen and (max-width: 767px) {
      
 /* =======  HEADER MOBILE STYLESS ======= */
-       
+
 .mobile-open-btn {
             border: none;
             background-color: transparent;
