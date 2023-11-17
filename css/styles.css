@@ -68,9 +68,20 @@ body {
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
+    max-width: 1158px;
 }
 
 /* ============== /COMMON STYLES ============== */
+/* @media screen and (min-width: 320px) {
+.container {
+        width: 318px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+} */
+
+
 .hero-section {
     margin: 0 auto;
     background-color: #2e2f42;
@@ -175,8 +186,7 @@ body {
     background-color: #F4F4FD;
     padding: 96px 0;
     margin: 0 auto;
-    padding-right: 16px;
-        padding-left: 16px;
+
 }
 .team-people-list {
     display: flex;
@@ -249,14 +259,33 @@ background-color: #FFFFFF;
     fill: #f4f4fd;
 }
 
-/* @media screen and (min-width: 320px) {
-.container {
-        width: 318px;
-        margin-left: auto;
-        margin-right: auto;
+/* ====PORTFOLIO SECTION COMMON STYLES=========== */
+.portfolio-section {
+    padding: 96px 0;
+    background-color: #FFF;
+}
+.portfolio-title {
 
-    }
-} */
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11px;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        margin-bottom: 72px;
+        color: var(--NAVY-BLUE, #2E2F42);
+}
+
+.portfolio-title-list {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/* ====/PORTFOLIO SECTION COMMON STYLES=========== */
+
+
+
 
 @media screen and (max-width: 767px) {
      
@@ -554,6 +583,9 @@ display: flex;
 
 
 /* ============/OUR TEAM TABLET=============== */
+
+
+
 }
 
 
@@ -620,8 +652,7 @@ only screen and (min-width: 768px) and (min-resolution: 192dpi) {
 /* ==============STRATEGY SECTION DESKTOP============== */
 .strategy-section {
     padding: 120px 0;
-padding-right: 15px;
-    padding-left: 15px;
+        max-width: 1158px;
 }
 .icon-list {
     display: flex;
@@ -676,8 +707,7 @@ padding-right: 15px;
         }
 .team-people-section{
     padding: 120px 0;
-    padding-right: 15px;
-        padding-left: 15px;
+
 
 }
 }
