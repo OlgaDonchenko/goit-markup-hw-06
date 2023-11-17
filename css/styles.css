@@ -318,15 +318,18 @@ background-color: #FFFFFF;
    
 }
 .portfolio-title-list-item {
-display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+ 
 }
     
 
 /* ====/PORTFOLIO SECTION COMMON STYLES=========== */
+/* ====PORTFOLIO SECTION======= */
+.overlay {
+    display: none;
+}
 
+/* ====/PORTFOLIO SECTION======= */
 @media screen and (min-width: 320px) {
     .container {
         width: 352px;
@@ -378,12 +381,8 @@ display: inline-flex;
         .mobile-menu-container {
             position: relative;
         }
-           
-   
-    
         
-    
-        .mobile-menu {
+           .mobile-menu {
             position: fixed;
             top: 0;
             left: 0;
@@ -400,30 +399,13 @@ display: inline-flex;
         }
     
 /* =======  /HEADER MOBILE STYLESS MOBILE ================================= */
+/* =====PORTFOLIO SECTION MOBILE==== */
+.overlay-cards-img {
+    width: 288px;
+    height: 280px;
+}
 
- /* ============HERO SECTION MOBILE=========================================================== */
-
-
-
-                    
-
- /* ============/HERO SECTION MOBILE================= */
- /* ================STRATEGY SECTION MOBILE========================================= */
-
-
-
-
-/* ================/STRATEGY SECTION MOBILE========================================= */
-/* =================OUR TEAM SECTION MOBILE=========== */
-
-
-
-
-
-
-
-/* =================/OUR TEAM SECTION MOBILE=========== */
-
+/* =====/PORTFOLIO SECTION MOBILE==== */
 }
 
 
@@ -590,13 +572,22 @@ display: flex;
 .name-strategy {
         text-align: start ;
     }
-/* ============STRATEGY SECTION TABLET============================================== */
-/* ============OUR TEAM TABLET=============== */
+/* ============/STRATEGY SECTION TABLET============================================== */
+/* ============PORTFOLIO TABLET=============== */
 
+.portfolio-title-list-item {
+width: calc((100% - 72px) / 2);
+}
+.portfolio-titdisplay {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;} 
 
+}
+  
 
-
-/* ============/OUR TEAM TABLET=============== */
+/* ============/PORTFOLIO TABLET=============== */
 
 
 
@@ -721,8 +712,18 @@ only screen and (min-width: 768px) and (min-resolution: 192dpi) {
         }
 .team-people-section{
     padding: 120px 0;
+}
 
+.overlay {
+    display: flex;
+}
+.overlay-cards-img {
+    width: 360px;
+    height: 300px;
+}
 
+.portfolio-title-list-item {
+    width: calc((100% - 72px) / 4);
 }
 }
 @media only screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2),
