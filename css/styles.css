@@ -361,6 +361,12 @@ border: 1px solid #f4f4fd;
      }
 
 /* ====/PORTFOLIO SECTION======= */
+/* ====FOOTER SECTION====== */
+.footer-section {
+    padding: 96px 0;
+}
+
+/* ====/FOOTER SECTION====== */
 
 
 
@@ -431,6 +437,7 @@ border: 1px solid #f4f4fd;
         .mobile-menu.is-open {
             transform: translateX(0%);
         }
+
 
 
 /* ============TABLET SETTINGS================================================= */
