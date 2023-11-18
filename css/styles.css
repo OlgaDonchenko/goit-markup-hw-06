@@ -119,12 +119,20 @@ body {
     background-origin: padding-box;
     background-clip: padding-box;
     background-size: cover;
+padding-top: 72px;
+padding-bottom: 72px;
+background-image: 
+linear-gradient(rgba(46, 47, 66, 0.70),
+ rgba(46, 47, 66, 0.70)),
+url(../images/people-office-mob.jpg);
 }
 
- .hero-section {
-     padding-top: 72px;
-     padding-bottom: 72px;
-     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-mob.jpg);
+ @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+ only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+     .hero-section {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-mob@2x.jpg);
+         /* Retina-зображення для мобільних телефонів (2x) */
+     }
  }
 
 .main-title {
@@ -291,36 +299,38 @@ background-color: #FFFFFF;
 }
 /* =====/OUR TEAM SECTION=========== */
 /* ====PORTFOLIO SECTION COMMON STYLES=========== */
+
 .portfolio-section {
     padding: 96px 0;
-    background-color: #FFF;
 }
 .portfolio-title {
+    margin-bottom: 72px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--NAVY-BLUE, #2E2F42);
 
-        text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11px;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        margin-bottom: 72px;
-        color: var(--NAVY-BLUE, #2E2F42);
 }
 
 .portfolio-title-list {
+display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    gap: 48px;
 
-    display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 48px;
+      
    
 }
 .portfolio-title-list-item {
-
- 
+border: 1px solid #f4f4fd;
+    background: #ffffff;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+ 
+
     
 
 /* ====/PORTFOLIO SECTION COMMON STYLES=========== */
@@ -328,8 +338,32 @@ background-color: #FFFFFF;
 .overlay {
     display: none;
 }
+.group-service {
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+        color: var(--NAVY-BLUE, #2E2F42);
+}
+     .type-service {
+        color: var(--SLATE, #434455);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+     }
+     .container-group-service {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 32px 16px;
+     }
 
 /* ====/PORTFOLIO SECTION======= */
+
+
+
 @media screen and (min-width: 320px) {
     .container {
         width: 352px;
@@ -339,7 +373,7 @@ background-color: #FFFFFF;
 }
 
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) { */
      
 /* =======  HEADER MOBILE STYLESS ======= */
 .page-header {
@@ -397,37 +431,18 @@ background-color: #FFFFFF;
         .mobile-menu.is-open {
             transform: translateX(0%);
         }
-    
-/* =======  /HEADER MOBILE STYLESS MOBILE ================================= */
-/* =====PORTFOLIO SECTION MOBILE==== */
-.overlay-cards-img {
-    width: 288px;
-    height: 280px;
-}
-
-/* =====/PORTFOLIO SECTION MOBILE==== */
-}
-
-
-
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-only screen and (max-width: 767px) and (min-resolution: 192dpi) {
-    .hero-section {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-mob@2x.jpg);
-        /* Retina-зображення для планшетів (2x) */
-    }
-}
-/* =========/MOBILE SETTINGS=================================================== */
-
-
 
 
 /* ============TABLET SETTINGS================================================= */
 @media screen and (min-width: 768px) {
 /* ============/HEADER SECTION TABLET================= */
     .container {
-        width: 736px;
+        width: 768px;
     }
+        .page-header {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
         .mobile-open-btn {
             display: none;
         }
@@ -440,7 +455,7 @@ only screen and (max-width: 767px) and (min-resolution: 192dpi) {
             align-items: center;
             justify-content: space-between;
             max-width: 500px;
-            padding: 0 15px;
+            
             margin-right: 0;
   
         }
@@ -470,7 +485,7 @@ only screen and (max-width: 767px) and (min-resolution: 192dpi) {
      }
      .address-menu {
         display: flex;  
-        padding-top: 16px;
+        justify-content: center;
      }
            .address-list {
             display: flex;
@@ -486,8 +501,7 @@ only screen and (max-width: 767px) and (min-resolution: 192dpi) {
             letter-spacing: 0.02em;
             color: var(--SLATE, #434455);
      }
-     
-    
+         
          .nav:hover {
              color: #404bbf;
          }
@@ -520,7 +534,8 @@ only screen and (max-width: 767px) and (min-resolution: 192dpi) {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom:-1px;
+
 }
 .address:hover {
     color: #404bbf;
@@ -535,9 +550,18 @@ only screen and (max-width: 767px) and (min-resolution: 192dpi) {
    
     padding-top: 112px;
     padding-bottom: 112px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-tablet.jpg);
+    background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.70),
+     rgba(46, 47, 66, 0.70)), 
+     url(../images/people-office-tablet.jpg);
+}
 
-
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-tablet@2x.jpg);
+        /* Retina-зображення для планшетів (2x) */
+    }
 }
 .main-title {
     max-width: 496px;
@@ -555,8 +579,6 @@ only screen and (max-width: 767px) and (min-resolution: 192dpi) {
 
 /* ===========/HERO SECTION TABLET===================================== */
 /* ============STRATEGY SECTION TABLET============================================== */
-
-
 
 .strategy-list {
 display: flex;
@@ -576,39 +598,32 @@ display: flex;
 /* ============PORTFOLIO TABLET=============== */
 
 .portfolio-title-list-item {
-width: calc((100% - 72px) / 2);
+
+width: calc((100% - 24px) / 2);
 }
-.portfolio-titdisplay {
+.portfolio-title-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;} 
-
+    row-gap: 72px;
+    justify-content: center;
+} 
+      
+        
 }
+
   
 
 /* ============/PORTFOLIO TABLET=============== */
 
 
 
-}
-
-
-
-
-
-
-@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    .hero-section {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-tablet@2x.jpg);
-        /* Retina-зображення для планшетів (2x) */
-    }
-}
 
 
 @media screen and (min-width: 1158px) {
 /* =====HEADER SECTION DESKTOP========================================== */
+
 .container {
         width: 1158px;
         padding-left: 15px;
@@ -623,12 +638,9 @@ only screen and (min-width: 768px) and (min-resolution: 192dpi) {
         flex-direction: row;
         gap: 40px;
         text-align: right;
-                      
-
+   
             }
-.address-menu-item {
-        padding-top: 24px;
-    }
+
 .address-menu {
             padding-top: 0;
           
@@ -717,13 +729,17 @@ only screen and (min-width: 768px) and (min-resolution: 192dpi) {
 .overlay {
     display: flex;
 }
-.overlay-cards-img {
-    width: 360px;
-    height: 300px;
+.portfolio-section {
+    padding: 120px 0;
 }
+.portfolio-title-list {
+    row-gap: 48px; }
 
 .portfolio-title-list-item {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 48px) / 3);
+    border: 1px solid #e7e9fc;
+        background-color: #ffffff;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
 @media only screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2),
