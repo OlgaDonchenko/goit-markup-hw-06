@@ -69,10 +69,7 @@ body {
 /* ============== /COMMON STYLES ============== */
 
 /* ======HEADER SETTINGS========= */
-.container {
-    padding-left: 16px;
-    padding-right: 16px;
-}
+
 .page-header {
 
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
@@ -523,9 +520,9 @@ border: 1px solid #f4f4fd;
 
 @media screen and (min-width: 320px) {
     .container {
-        width: 352px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 320x;
+        margin: 0 auto;
+        padding: 0 16px;
     }
 }
 
