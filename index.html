@@ -596,7 +596,7 @@
     <!-- =================== /FOOTER==================-->
 
     <!-- ==================BACKDROP======================== -->
-    <!-- <div class="backdrop is-open">
+    <div class="backdrop is-open">
       <div class="modal">
         <button
           class="modal-close-btn"
@@ -609,12 +609,12 @@
         </button>
         <p class="modal-text-description">
           Leave your contacts and we will call you back
-        </p> -->
-    <!-- ==================/BACKDROP======================== -->
+        </p>
+        <!-- ==================/BACKDROP======================== -->
 
-    <!-- ====================REVIEW FORM============================= -->
+        <!-- ====================REVIEW FORM============================= -->
 
-    <!-- <form class="review-form">
+        <form class="review-form">
           <div class="review-form-wrapper">
             <label class="review-form-label" for="user-name"> Name </label>
             <div class="review-form-input-wrapper">
@@ -707,12 +707,13 @@
             </label>
           </div>
           <button class="review-form-btn" type="submit">Send</button>
-        </form> -->
-    <!-- =================/REVIEW FORM============================= -->
-    <!-- </div>
-    </div> -->
+        </form>
+        -->
+        <!-- =================/REVIEW FORM============================= -->
+      </div>
+    </div>
     <!--  MOBILE MENU -->
-    <div class="mobile-menu">
+    <div class="mobile-menu is-open">
       <div class="container mobile-menu-container">
         <button class="mobile-menu-close-btn" type="button">
           <svg class="mobile-menu-close-btn-icon" width="8" height="8">
@@ -720,14 +721,14 @@
           </svg>
         </button>
         <nav>
-          <ul>
-            <li><a href=""></a>Studio</li>
-            <li><a href=""></a>Portfolio</li>
-            <li><a href=""></a>Contacts</li>
+          <ul class="mobile-menu-nav-list">
+            <li class="mobile-menu-nav-item"><a href=""></a>Studio</li>
+            <li class="mobile-menu-nav-item"><a href=""></a>Portfolio</li>
+            <li class="mobile-menu-nav-item"><a href=""></a>Contacts</li>
           </ul>
         </nav>
         <address class="mobile-menu-contacts">
-          <ul class="mobile-menu-contacts-list">
+          <ul class="mobile-menu-contacts-list link">
             <li class="mobile-menu-item">
               <a href="mailto:info@devstudio.com" class="mobile-menu-address"
                 >info@devstudio.com</a
@@ -740,6 +741,58 @@
             </li>
           </ul>
         </address>
+        <div class="social-media">
+          <ul class="mobile-menu-social-icons-list list">
+            <li class="social-icons-item">
+              <a class="icon-social-item-link" href="#">
+                <svg
+                  class="icon-social-item-link-svg"
+                  width="24"
+                  height="24"
+                  aria-label="icon instagram"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons-item">
+              <a class="icon-social-item-link" href="#">
+                <svg
+                  class="icon-social-item-link-svg"
+                  width="24"
+                  height="24"
+                  aria-label="icon twitter"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons-item">
+              <a class="icon-social-item-link" href="#">
+                <svg
+                  class="icon-social-item-link-svg"
+                  width="24"
+                  height="24"
+                  aria-label="icon facebook"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons-item">
+              <a class="icon-social-item-link" href="#">
+                <svg
+                  class="icon-social-item-link-svg"
+                  width="24"
+                  height="24"
+                  aria-label="icon linkedin"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
